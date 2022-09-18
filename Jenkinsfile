@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('') {
+          steps {
+            cleanWs(cleanWhenAborted: true, cleanWhenFailure: true)
+          }
+        }
+
       }
     }
 
